@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbit PM</title>
+<link rel="stylesheet" href="src/app.css">
+<link rel="icon" href="icons/icon32.png">
+</head>
+<body>
+<aside class="side">
+  <div class="logo"><span class="ring"></span>Orbit<b>PM</b></div>
+  <div class="side-h">Projects <button id="addProject" class="icon-btn" title="New project">＋</button></div>
+  <nav id="projects" class="projects"></nav>
+  <div class="side-foot">
+    <div class="today-box"><div class="lbl">Tracked today</div><div id="todayTotal" class="big">0m</div>
+      <div class="goalbar"><i id="todayBar"></i></div><div id="todayGoal" class="lbl"></div></div>
+    <div class="offline">● offline · stored in this browser</div>
+  </div>
+</aside>
+<main>
+  <header class="top">
+    <nav class="views" id="views">
+      <a data-view="board" class="on">Board</a><a data-view="timeline">Timeline</a><a data-view="time">Time</a>
+      <a data-view="report">Report</a><a data-view="workspaces">Workspaces</a><a data-view="settings">Settings</a>
+    </nav>
+    <input id="quick" class="quick" placeholder="Quick add:  Write chapter 4 #msc !high due:fri ~3h @writing   (Enter)">
+    <div id="timerPill" class="timer-pill idle"><span class="dot"></span><span id="timerText">No timer running</span><button id="timerStop" class="stop">■</button></div>
+  </header>
+  <section id="view-board" class="view on"><div id="board" class="board"></div></section>
+  <section id="view-timeline" class="view"><div class="toolbar"><span class="title" id="tlTitle"></span><span class="legend"><i class="lg doing"></i>in progress <i class="lg todo"></i>to do <i class="lg done"></i>done <i class="lg review"></i>review <i class="lg backlog"></i>backlog · arrows: dependencies</span></div><div id="timeline" class="timeline"></div></section>
+  <section id="view-time" class="view">
+    <div class="toolbar"><button id="wkPrev" class="btn ghost">‹</button><span id="wkLabel" class="title"></span><button id="wkNext" class="btn ghost">›</button><span class="grow"></span><button id="addManual" class="btn">＋ Add time manually</button></div>
+    <div class="grid2"><div class="card"><h3>Hours per day, by project</h3><div id="timeBars"></div></div>
+      <div class="card"><h3>Sessions this week</h3><div id="timeList" class="tlist"></div></div></div>
+  </section>
+  <section id="view-report" class="view">
+    <div class="toolbar"><button id="rpPrev" class="btn ghost">‹</button><span id="rpLabel" class="title"></span><button id="rpNext" class="btn ghost">›</button><span class="grow"></span><button id="copyMd" class="btn">Copy as Markdown</button><button id="dlMd" class="btn ghost">Download .md</button></div>
+    <div id="kpis" class="kpis"></div>
+    <div class="grid3">
+      <div class="card"><h3>Where the time went</h3><div id="donut" class="donut-wrap"></div><div id="donutLegend" class="legend-list"></div></div>
+      <div class="card"><h3>Tasks completed per day</h3><div id="doneBars"></div></div>
+      <div class="card"><h3>Burndown <select id="bdProject" class="sel"></select></h3><div id="burn"></div><div class="hint">remaining estimated hours · dashed: ideal</div></div>
+    </div>
+    <div class="card"><h3>Most time spent on</h3><div id="topTasks" class="tlist"></div></div>
+  </section>
+  <section id="view-workspaces" class="view">
+    <div class="toolbar"><span class="title">Tab workspaces</span><span class="grow"></span><input id="wsName" class="inp" placeholder="Workspace name"><select id="wsProject" class="sel"></select><button id="wsSave" class="btn">Save this window's tabs</button></div>
+    <p class="hint">A workspace is the set of tabs you need for one piece of work: the paper you are reading, the overleaf draft, the dataset page. Save them now, close them, and reopen them all in a new window later.</p>
+    <div id="workspaces" class="ws-grid"></div>
+  </section>
+  <section id="view-settings" class="view">
+    <div class="grid2">
+      <div class="card"><h3>Preferences</h3>
+        <label class="row">Week starts on <select id="setWeek" class="sel"><option value="1">Monday</option><option value="0">Sunday</option><option value="6">Saturday</option></select></label>
+        <label class="row">Daily focus goal (hours) <input id="setGoal" type="number" min="1" max="16" step="0.5" class="inp small"></label>
+      </div>
+      <div class="card"><h3>Data</h3>
+        <div class="row"><button id="exportJson" class="btn">Export JSON</button><label class="btn ghost">Import JSON<input id="importJson" type="file" accept="application/json" hidden></label></div>
+        <div class="row"><button id="loadSample" class="btn ghost">Load sample data</button><button id="clearAll" class="btn danger">Delete everything</button></div>
+        <p class="hint">Everything is stored in <code>chrome.storage.local</code> on this computer. Nothing is sent anywhere; the extension makes no network requests.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="drawer" class="drawer"></div>
+<div id="toast" class="toast"></div>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>

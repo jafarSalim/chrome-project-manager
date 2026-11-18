@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e1116"/><stop offset="1" stop-color="#151b24"/></linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".5"/></filter>
+</defs>
+<rect width="1200" height="420" fill="url(#bg)"/>
+<g opacity=".5"><ellipse cx="250" cy="215" rx="200" ry="200" fill="none" stroke="#c6f432" stroke-opacity=".12" stroke-width="1.5"/><ellipse cx="250" cy="215" rx="150" ry="150" fill="none" stroke="#4cc9f0" stroke-opacity=".12" stroke-width="1.5"/></g>
+<circle r="6" fill="#4cc9f0" filter="url(#glow)"><animateMotion dur="9s" repeatCount="indefinite" path="M50,215 a200,200 0 1,0 400,0 a200,200 0 1,0 -400,0"/></circle>
+<circle r="4" fill="#ff8fab" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M400,215 a150,150 0 1,1 -300,0 a150,150 0 1,1 300,0"/></circle>
+<circle cx="98" cy="150" r="22" fill="none" stroke="#c6f432" stroke-width="6" filter="url(#glow)"/>
+<text x="138" y="168" font-size="54" font-weight="900" fill="#e8edf4">Orbit <tspan fill="#c6f432">PM</tspan></text>
+<text x="78" y="218" font-size="19" fill="#8a96a8">A project manager that lives in Chrome.</text>
+<text x="78" y="246" font-size="19" fill="#8a96a8">Kanban · Gantt · timers · tab workspaces · reports</text>
+<g font-size="13" font-weight="700">
+<rect x="78" y="276" width="126" height="30" rx="15" fill="none" stroke="#c6f432" stroke-opacity=".7"/><text x="141" y="296" text-anchor="middle" fill="#c6f432">OFFLINE</text>
+<rect x="216" y="276" width="126" height="30" rx="15" fill="none" stroke="#4cc9f0" stroke-opacity=".7"/><text x="279" y="296" text-anchor="middle" fill="#4cc9f0">NO ACCOUNT</text>
+<rect x="354" y="276" width="126" height="30" rx="15" fill="none" stroke="#ff8fab" stroke-opacity=".7"/><text x="417" y="296" text-anchor="middle" fill="#ff8fab">MANIFEST V3</text>
+</g>
+<g filter="url(#sh)"><rect x="620" y="60" width="170" height="300" rx="14" fill="#151a22" stroke="#262e3a"/></g>
+<text x="636" y="90" font-size="15" font-weight="700" fill="#e8edf4">To do</text><rect x="636" y="100" width="44" height="3" rx="2" fill="#4cc9f0"/>
+<g filter="url(#sh)"><rect x="805" y="60" width="170" height="300" rx="14" fill="#151a22" stroke="#262e3a"/></g>
+<text x="821" y="90" font-size="15" font-weight="700" fill="#e8edf4">In progress</text><rect x="821" y="100" width="44" height="3" rx="2" fill="#c6f432"/>
+<g filter="url(#sh)"><rect x="990" y="60" width="170" height="300" rx="14" fill="#151a22" stroke="#262e3a"/></g>
+<text x="1006" y="90" font-size="15" font-weight="700" fill="#e8edf4">Done</text><rect x="1006" y="100" width="44" height="3" rx="2" fill="#4b5563"/>
+<rect x="632" y="120" width="146" height="58" rx="10" fill="#1b212b" stroke="#262e3a"/><rect x="632" y="120" width="4" height="58" rx="2" fill="#c6f432"/><text x="646" y="144" font-size="13" font-weight="600" fill="#e8edf4">Literature search</text><rect x="646" y="156" width="118" height="4" rx="2" fill="#10141a"/>
+<rect x="632" y="188" width="146" height="58" rx="10" fill="#1b212b" stroke="#262e3a"/><rect x="632" y="188" width="4" height="58" rx="2" fill="#4cc9f0"/><text x="646" y="212" font-size="13" font-weight="600" fill="#e8edf4">Make figures</text><rect x="646" y="224" width="118" height="4" rx="2" fill="#10141a"/>
+<rect x="817" y="120" width="146" height="58" rx="10" fill="#1b212b" stroke="#262e3a"/><rect x="817" y="120" width="4" height="58" rx="2" fill="#4cc9f0"/><text x="831" y="144" font-size="13" font-weight="600" fill="#e8edf4">Draft abstract</text><rect x="831" y="156" width="118" height="4" rx="2" fill="#10141a"/>
+<rect x="1002" y="120" width="146" height="58" rx="10" fill="#1b212b" stroke="#262e3a"/><rect x="1002" y="120" width="4" height="58" rx="2" fill="#c6f432"/><text x="1016" y="144" font-size="13" font-weight="600" fill="#e8edf4">Build simulator</text><rect x="1016" y="156" width="118" height="4" rx="2" fill="#10141a"/>
+<rect x="1002" y="188" width="146" height="58" rx="10" fill="#1b212b" stroke="#262e3a"/><rect x="1002" y="188" width="4" height="58" rx="2" fill="#ff8fab"/><text x="1016" y="212" font-size="13" font-weight="600" fill="#e8edf4">Grade lab reports</text><rect x="1016" y="224" width="118" height="4" rx="2" fill="#10141a"/>
+<g filter="url(#sh)"><rect x="0" y="0" width="146" height="58" rx="10" fill="#1b212b" stroke="#262e3a"/><rect x="0" y="0" width="4" height="58" rx="2" fill="#c6f432"/><text x="14" y="24" font-size="13" font-weight="600" fill="#e8edf4">Train CNN model</text><rect x="14" y="36" width="118" height="4" rx="2" fill="#10141a"/><rect x="14" y="36" width="0" height="4" rx="2" fill="#c6f432"><animate attributeName="width" values="0;0;118;118;0" keyTimes="0;.3;.62;.95;1" dur="8s" repeatCount="indefinite"/></rect><circle cx="130" cy="20" r="9" fill="#ff6b6b" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.3;.32;.62;.64;1" dur="8s" repeatCount="indefinite"/></circle><animateTransform attributeName="transform" type="translate" values="632,256;632,256;817,188;817,188;1002,256;1002,256;632,256" keyTimes="0;.15;.3;.62;.75;.95;1" dur="8s" repeatCount="indefinite"/></g>
+<g><rect x="805" y="372" width="200" height="34" rx="17" fill="#151a22" stroke="#c6f432"/><circle cx="826" cy="389" r="5" fill="#c6f432"><animate attributeName="opacity" values="1;.3;1" dur="1.2s" repeatCount="indefinite"/></circle><text x="842" y="394" font-size="14" fill="#e8edf4" font-weight="600">tracking · 0:42:17</text></g>
+</svg>

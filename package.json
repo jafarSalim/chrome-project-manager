@@ -1,0 +1,13 @@
+{
+  "name": "orbit-pm",
+  "version": "1.0.0",
+  "description": "Chrome extension (MV3): Kanban, Gantt timeline, per-task time tracking, tab workspaces, deadline reminders and weekly reports. Offline.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "e2e": "xvfb-run -a python3 scripts/e2e.py"
+  },
+  "author": "Jaafar Salim",
+  "license": "MIT",
+  "private": true
+}

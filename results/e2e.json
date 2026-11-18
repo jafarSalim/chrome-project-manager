@@ -1,0 +1,72 @@
+{
+ "checks": [
+  {
+   "check": "service worker started",
+   "ok": true,
+   "detail": "geeppihngflnnjaoohpanoijooihlcbn"
+  },
+  {
+   "check": "sample data loaded",
+   "ok": true,
+   "detail": "3 projects, 13 tasks"
+  },
+  {
+   "check": "board shows every task",
+   "ok": true,
+   "detail": "13 cards"
+  },
+  {
+   "check": "drag and drop moves the card",
+   "ok": true,
+   "detail": "doing"
+  },
+  {
+   "check": "timer starts on the task",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "stopping logs a session",
+   "ok": true,
+   "detail": "2750 ms"
+  },
+  {
+   "check": "quick add parses the mini-syntax",
+   "ok": true,
+   "detail": "{\"projectId\": \"p_paper\", \"priority\": \"high\", \"estimateH\": 3, \"tags\": [\"writing\"]}"
+  },
+  {
+   "check": "timeline draws bars and dependency arrows",
+   "ok": true,
+   "detail": "12 bar rects, 5 arrows"
+  },
+  {
+   "check": "report shows KPIs",
+   "ok": true,
+   "detail": "19h 00m | 1 | 100 % | 2"
+  },
+  {
+   "check": "weekly report exports Markdown",
+   "ok": true,
+   "detail": "18 lines"
+  },
+  {
+   "check": "workspace saves the open web tabs",
+   "ok": true,
+   "detail": "3 tabs"
+  },
+  {
+   "check": "workspace reopens in a new window",
+   "ok": true,
+   "detail": "3 new tabs"
+  },
+  {
+   "check": "popup starts a timer",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "passed": 13,
+ "total": 13,
+ "date": "2026-11-19 02:01"
+}

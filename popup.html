@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Orbit PM</title><link rel="stylesheet" href="src/popup.css"></head>
+<body>
+  <header><div class="logo"><span class="ring"></span>Orbit<b>PM</b></div><button id="openApp" class="btn">Open board ↗</button></header>
+  <section id="timer" class="timer idle"><div class="lbl">Timer</div><div id="tTask" class="tt">No timer running</div><div class="trow"><span id="tTime" class="big">0:00:00</span><button id="tStop" class="stop">■ Stop</button></div></section>
+  <input id="quick" class="quick" placeholder="Quick add: Title #project !high due:fri ~2h">
+  <div class="sec">Today &amp; overdue</div>
+  <div id="list" class="list"></div>
+  <footer><span id="todayTotal"></span><span>Alt+Shift+T toggles the timer</span></footer>
+  <script type="module" src="src/popup.js"></script>
+</body>
+</html>
